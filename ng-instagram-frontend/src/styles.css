@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+    background-color: #e9ecef;
+}
+
+.navbar-brand { color: white !important; }
+
+.dropdown-toggle { cursor: pointer; }
+.dropdown-toggle::after {
+    transition: transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+}
+.dropdown-toggle[aria-expanded="true"]::after {
+    transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+}
